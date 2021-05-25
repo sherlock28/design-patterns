@@ -13,9 +13,11 @@ package patterns;
 //import abstractfactory.connectiondbfactory.IConnectionDB;
 //import abstractfactory.connectionrestfactory.IConnectionREST;
 
-/* Prototype Factory Pattern */
+/* Prototype Pattern */
 //import prototype.AccountSaving;
 
+/* Facade Pattern */
+//import facade.CheckFacade;
 
 public class Main {
 
@@ -44,8 +46,6 @@ public class Main {
 //        IConnection c4 = factory.getConnection("hdj");
 //        c4.connect();
 //        c4.disconnect();
-
-
         /* Abstract Factory Pattern */
 //        IAbstractFactory absFactorydb = AbstractFactory.getFactory("DB");
 //        IConnectionDB cdb1 = absFactorydb.getDB("MYSQL");
@@ -54,9 +54,7 @@ public class Main {
 //        IAbstractFactory absFactoryrest = AbstractFactory.getFactory("REST");
 //        IConnectionREST crs1 = absFactoryrest.getREST("SALES");
 //        crs1.readURL("https://rododev.vercel.app");
-
-
-        /* Prototype Factory Pattern */
+        /* Prototype Pattern */
 //        AccountSaving accountSv = new AccountSaving();
 //        accountSv.setAmount(200);
 //        AccountSaving accountCloned = (AccountSaving) accountSv.cloneAccount();
@@ -66,6 +64,14 @@ public class Main {
 //        }
 //
 //        System.out.println(accountCloned == accountSv);
+
+
+        /* Facade Pattern */
+//        CheckFacade facade1 = new CheckFacade();
+//        facade1.search("25/05/2021", "05/06/2021", "San Miguel de Tucumán", "Buenos Aires");
+//        
+//        CheckFacade facade2 = new CheckFacade();
+//        facade2.search("10/08/2021", "20/08/2021", "San Miguel de Tucumán", "Rosario");
 
     }
 
